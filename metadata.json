@@ -1,1 +1,6 @@
-{"name":"BharatDrone OS Prototype","description":"Interactive command dashboard and real-time simulator for BharatDrone OS (Autonomous Platform for Drone) showcasing hardware auto-detection, AI weather-aware A* routing, NVIDIA Jetson Edge AI obstacle tracking, and Digital Sky compliance.","requestFramePermissions":[],"majorCapabilities":["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]}
+{
+  "name": "Bharat Drone OS Prototype",
+  "description": "Interactive command dashboard and real-time simulator for Bharat Drone OS showcasing hardware auto-detection, AI weather-aware A* routing, NVIDIA Jetson Edge AI obstacle tracking, and Digital Sky compliance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

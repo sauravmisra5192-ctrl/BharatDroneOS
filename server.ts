@@ -59,7 +59,7 @@ Due to heavy weather front (wind speed 18-22 knots), real-time compensation is a
 
   try {
     const prompt = `
-      You are the AI Routing Master for BharatDrone OS (Autonomous Platform for Drone).
+      You are the AI Routing Master for Bharat Drone OS.
       We are flying a drone simulation in the ${city || "Indian subcontinent"} under the physical scenario of "${scenario || "High Mountain Wind & Cloud Front"}".
       The pilot's target flight path waypoints are: ${JSON.stringify(waypoints)}.
 
@@ -118,13 +118,13 @@ app.post("/api/copilot", async (req, res) => {
   if (!ai) {
     return res.json({
       success: true,
-      text: "BharatDrone OS (Autonomous Platform for Drone) simulator loaded in Standalone/Mock Mode. To enable full generative drone AI responses, make sure a valid 'GEMINI_API_KEY' is provided in your secrets panel!\n\nHere are some of the active embedded system subroutines for you to review:\n- `hal::init_port(CUBE_ORANGE)`: Probes hardware stack.\n- `ros2::launch(health_monitor)`: Ensures motor telemetry is green.\n- `dgca::verify_digital_sky_token()`: Returns DGCA authorization status.",
+      text: "Bharat Drone OS Simulator loaded in Standalone/Mock Mode. To enable full generative drone AI responses, make sure a valid 'GEMINI_API_KEY' is provided in your secrets panel!\n\nHere are some of the active embedded system subroutines for you to review:\n- `hal::init_port(CUBE_ORANGE)`: Probes hardware stack.\n- `ros2::launch(health_monitor)`: Ensures motor telemetry is green.\n- `dgca::verify_digital_sky_token()`: Returns DGCA authorization status.",
     });
   }
 
   try {
     const systemInstruction = `
-      You are the Lead Systems & AI Co-pilot representing "BharatDrone OS (Autonomous Platform for Drone)".
+      You are the Lead Systems & AI Co-pilot representing "Bharat Drone OS", India's supreme, plug-and-play drone operating system.
       You understand flight dynamics, FreeRTOS priority queues, PX4 SITL simulation state, NVIDIA Jetson Edge YOLOv8 vision pipelines, DGCA Digital Sky API, and MAVLink drivers.
       Provide highly technical, inspiring, and concise operational feedback to the user on how the drone's subsystems are performing, how to resolve calibration errors, and how to program autonomous mission scripts.
       Refer to specific components like the Pixhawk 6C, Cube Orange, wind compensation matrices, and DGCA permission tokens. Keep it short and full-stack engineering minded.
@@ -191,7 +191,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`[BharatDrone OS (Autonomous Platform for Drone) v1.0.0] Mission Control online on http://0.0.0.0:${PORT}`);
+    console.log(`[Bharat Drone OS v1.0.0] Mission Control online on http://0.0.0.0:${PORT}`);
   });
 }
 
